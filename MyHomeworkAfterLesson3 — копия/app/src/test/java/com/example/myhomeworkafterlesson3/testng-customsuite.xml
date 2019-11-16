@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Default Suite">
+    <parameter name="param_1" value="5"/>
+    <parameter name="param_2" value="5"/>
+    <parameter name="param_3" value="9"/>
+    <listeners>
+        <listener class-name="com.example.myhomeworkafterlesson3.ListenerClass"/>
+    </listeners>
+    <test name="MockitoTest">
+        <classes>
+            <class name="com.example.myhomeworkafterlesson3.ExampleUnitTest"/>
+        </classes>
+    </test>
+</suite>

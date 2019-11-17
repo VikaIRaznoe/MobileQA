@@ -4,6 +4,7 @@ import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertNotEquals;
+import org.mockito.Mockito;
 
 public class ExampleUnitTest {
 
@@ -24,5 +25,15 @@ public class ExampleUnitTest {
     public void testParameterNotEquals(String param_1,String param_3){
         //assertEquals(param_1,param_2);
         assertNotEquals(param_1,param_3);
+    }
+
+    //Дополнительный тест
+    @Parameters({"param_4"})
+    @Test
+    public void testingMock(String param_4){
+        String name = param_4;
+        MockClass mockObject = Mockito.mock(MockClass.class);
+        Mockito.when(mockObject.yourName(name)).thenReturn(name);
+        assertEquals("Hello, " + name, "Hello, " + name);
     }
 }

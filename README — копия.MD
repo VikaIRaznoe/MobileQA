@@ -1,6 +1,6 @@
  **ДОМАШНИЕ ЗАДАНИЯ.**
  =====================  
- ***Мое решение. ***
+ *** Мое решение. ***
  -----------------------------------
 ### Домашнее задание после урока: 'Введение в Unit-тестирование с помщью TestNG'
 #### Задание: TestNG Unit-тестирование
@@ -30,7 +30,8 @@
 1. Создать новый проект в Firebase: https://console.firebase.google.com/u/0/?pli=1
 2. Открыть проект
 3. Выбрать Test Lab слева
-4. Скачать APK: https://raw.githubusercontent.com/afollestad/material-dialogs/master/sample/sample.apk
+4. Скачать APK: https://raw.githubusercontent.com/afollestad/material-dialogs/master/sample/sample.apk 
+ ***
 Можно создать свой APK в Android Studio
 5. Внести APK в Test Lab, посмотреть результаты тестов Robo
 6. Опционально: добавить свой тест

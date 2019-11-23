@@ -31,5 +31,6 @@
 2. Открыть проект
 3. Выбрать Test Lab слева
 4. Скачать APK: https://raw.githubusercontent.com/afollestad/material-dialogs/master/sample/sample.apk
+Можно создать свой APK в Android Studio
 5. Внести APK в Test Lab, посмотреть результаты тестов Robo
 6. Опционально: добавить свой тест

@@ -98,9 +98,9 @@ public class SecondTest {
         searchClick.clear();
         Thread.sleep(5000);
         //Возвращаемся обратно на главное окно приложения "Википедия"
-        WebElement element1 = waitForElementPresentRefact(By.className("android.widget.ImageButton"),5);
+        WebElement backButton = waitForElementPresentRefact(By.className("android.widget.ImageButton"),5);
         //WebElement element1 = waitForElementPresentRefact(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout[1]/android.view.ViewGroup/android.widget.ImageButton"),5);
-        element1.click();
+        backButton.click();
         Thread.sleep(5000);
     }
 }

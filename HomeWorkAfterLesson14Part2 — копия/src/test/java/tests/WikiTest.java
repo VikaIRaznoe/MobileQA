@@ -48,6 +48,7 @@ public class WikiTest {
     }
 
     @Test
+    @Ignore
     public void firstTest() throws InterruptedException {
         //Используем метод ожидания появления элемента
         //Проходим "SKIP"
@@ -93,5 +94,34 @@ public class WikiTest {
         Thread.sleep(5000);
 
         searchInput.getText();
+    }
+
+    @Test
+    public void thirdTest() throws InterruptedException {
+        //Используем метод ожидания появления элемента
+        //Проходим "SKIP"
+        WebElement element = waitForElementPresentRefact(By.id("fragment_onboarding_skip_button"),5);
+        element.click();
+        //Thread.sleep(10);
+        WebElement menu = waitForElementPresentRefact(By.id("drawer_icon_menu"),5);
+        menu.click();
+        //Thread.sleep(10);
+        WebElement about = waitForElementPresentRefact(By.id("view_announcement_text"),5);
+        about.click();
+        WebElement aboutTranslators = waitForElementPresentRefact(By.xpath("//*[contains(@text,'Translators')]"),5);
+        //Проверяем есть ли текст в разделе "Translators"
+        System.out.println(aboutTranslators.getText().isEmpty());
+
+        //Возвращаемся обратно
+        //WebElement backAbout = waitForElementPresentRefact(By.xpath("//android.widget.ImageButton[@content-desc=\"Navigate up\"]"),5);
+        WebElement backAbout = waitForElementPresentRefact(By.className("android.widget.ImageButton"),0);
+        backAbout.click();
+        Thread.sleep(5000);
+
+        //Кликаем на элемент "Закладки"
+        //WebElement bookmarks = waitForElementPresentRefact(By.xpath(".//*[@id='My lists']/ul/li/div/p[2]"),5);
+        //WebElement bookmarks = waitForElementPresentRefact(By.xpath("//android.widget.FrameLayout[@content-desc='My lists']"),5);
+        WebElement bookmarks = waitForElementPresentRefact(By.xpath("//android.widget.FrameLayout[@content-desc=\"My lists\"]/android.widget.ImageView"),5);
+        bookmarks.click();
     }
 }

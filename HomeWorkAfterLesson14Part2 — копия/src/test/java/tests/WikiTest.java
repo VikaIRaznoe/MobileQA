@@ -99,15 +99,18 @@ public class WikiTest {
     @Test
     public void thirdTest() throws InterruptedException {
         //Используем метод ожидания появления элемента
-        //Проходим "SKIP"
+        //Ищем и нажимаем на кнопку "SKIP"
         WebElement element = waitForElementPresentRefact(By.id("fragment_onboarding_skip_button"),5);
         element.click();
         //Thread.sleep(10);
+        //Ищем и нажимаем на меню(вверху,слева)
         WebElement menu = waitForElementPresentRefact(By.id("drawer_icon_menu"),5);
         menu.click();
         //Thread.sleep(10);
+        //Ищем и нажимаем на раздел "About"
         WebElement about = waitForElementPresentRefact(By.id("view_announcement_text"),5);
         about.click();
+        //Ищем раздел "Translators" и проверяем в нем наличие текста
         WebElement aboutTranslators = waitForElementPresentRefact(By.xpath("//*[contains(@text,'Translators')]"),5);
         //Проверяем есть ли текст в разделе "Translators"
         System.out.println(aboutTranslators.getText().isEmpty());
@@ -121,6 +124,7 @@ public class WikiTest {
         //Кликаем на элемент "Закладки"
         //WebElement bookmarks = waitForElementPresentRefact(By.xpath(".//*[@id='My lists']/ul/li/div/p[2]"),5);
         //WebElement bookmarks = waitForElementPresentRefact(By.xpath("//android.widget.FrameLayout[@content-desc='My lists']"),5);
+        //Помоему не работает!
         WebElement bookmarks = waitForElementPresentRefact(By.xpath("//android.widget.FrameLayout[@content-desc=\"My lists\"]/android.widget.ImageView"),5);
         bookmarks.click();
     }

@@ -225,6 +225,7 @@ public class WikiTest {
     }
 
     //Тест на проверку SCROLL
+    //Помоему неверно работает
     @Test
     public void scrollTest(){
         //Используем метод ожидания появления элемента
@@ -241,5 +242,28 @@ public class WikiTest {
         WebElement librariesUsed = waitForElementPresentRefact(By.xpath("//*[contains(@text,'Settings')]"),5);
         //4)Смотрим текст в этом разделе
         scrollForElement(By.id("activity_about_libraries"));
+    }
+
+    //Тест скроллит до элемента,который найден в результатах поиска на слово "java"
+    @Test
+    public void scroll2lTest() throws InterruptedException {
+        //Используем метод ожидания появления элемента
+        //1)Проходим "SKIP"
+        WebElement element = waitForElementPresentRefact(By.id("fragment_onboarding_skip_button"),5);
+        element.click();
+        //2)Ищем элемент ввода текста "Search Wikipedia" на главной странице приложения "Википедия"(wiki.apk)
+        WebElement textMessage = waitForElementPresentRefact(By.xpath("//*[contains(@text,'Search Wikipedia')]"),5);
+        textMessage.click();
+        //3)Ищем элемент ввода текста "Search Wikipedia" еще раз,только уже с другим локатором
+        WebElement searchClick = waitForElementPresentRefact(By.id("search_src_text"),5);
+        searchClick.click();
+        //4)Вводим слово Java в строку поиска
+        searchClick.sendKeys("java");
+        //5)Скролим вниз в течении 20 сек
+        scrollUp(5);
+        //6)Находим элемент с текстом 'Java virtual machine'
+        WebElement searchText = waitForElementPresentRefact(By.xpath("//*[contains(@text,'Java virtual machine')]"),5);
+        searchText.click();
+        Thread.sleep(2000);
     }
 }

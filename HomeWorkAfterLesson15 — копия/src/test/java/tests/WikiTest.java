@@ -34,6 +34,10 @@ public class WikiTest {
         caps.setCapability("appActivity","org.wikipedia.main.MainActivity");
         caps.setCapability("app","/Users/viktoria/IdeaProjects/Java/HomeWorkAfterLesson14Part2/src/test/resources/Apps/wiki.apk");
 
+        //для клавиатуры
+        caps.setCapability("unicodeKeyboard", true);
+        caps.setCapability("resetKeyboard", true);
+
         URL appiumURL = new URL("http://127.0.0.1:4723/wd/hub");
 
         driver = new AppiumDriver<MobileElement>(appiumURL,caps);
@@ -246,6 +250,7 @@ public class WikiTest {
 
     //Тест скроллит до элемента,который найден в результатах поиска на слово "java"
     @Test
+    @Ignore
     public void scroll2lTest() throws InterruptedException {
         //Используем метод ожидания появления элемента
         //1)Проходим "SKIP"
@@ -258,6 +263,30 @@ public class WikiTest {
         WebElement searchClick = waitForElementPresentRefact(By.id("search_src_text"),5);
         searchClick.click();
         //4)Вводим слово Java в строку поиска
+        searchClick.sendKeys("java");
+        //5)Скролим вниз в течении 20 сек
+        scrollUp(5);
+        //6)Находим элемент с текстом 'Java virtual machine'
+        WebElement searchText = waitForElementPresentRefact(By.xpath("//*[contains(@text,'Java virtual machine')]"),5);
+        searchText.click();
+        Thread.sleep(2000);
+    }
+
+    //Тест скроллит до элемента,который найден в результатах поиска на слово "java"
+    @Test
+    public void scroll3lTest() throws InterruptedException {
+        //Используем метод ожидания появления элемента
+        //1)Проходим "SKIP"
+        WebElement element = waitForElementPresentRefact(By.id("fragment_onboarding_skip_button"),5);
+        element.click();
+        //2)Ищем элемент ввода текста "Search Wikipedia" на главной странице приложения "Википедия"(wiki.apk)
+        WebElement textMessage = waitForElementPresentRefact(By.xpath("//*[contains(@text,'Search Wikipedia')]"),5);
+        textMessage.click();
+        //3)Ищем элемент ввода текста "Search Wikipedia" еще раз,только уже с другим локатором
+        WebElement searchClick = waitForElementPresentRefact(By.id("search_src_text"),5);
+        searchClick.click();
+        //4)Вводим слово Java в строку поиска
+        driver.hideKeyboard();
         searchClick.sendKeys("java");
         //5)Скролим вниз в течении 20 сек
         scrollUp(5);

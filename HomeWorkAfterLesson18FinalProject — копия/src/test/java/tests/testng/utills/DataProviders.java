@@ -34,8 +34,9 @@ public class DataProviders {
     }
 
 
-    @DataProvider(name= "data-provider")
-    public static Object[] dataProviderMethod(List<String> lines) {
+    @DataProvider(name= "dataProvider")
+    public static Object[] dataProviderMethod() {
+        List<String> lines = findStr();
         //Смотрим весь файл lisText
         //и выцепляем строку,которая следует за строкой,
         //которая по регулярке совпала

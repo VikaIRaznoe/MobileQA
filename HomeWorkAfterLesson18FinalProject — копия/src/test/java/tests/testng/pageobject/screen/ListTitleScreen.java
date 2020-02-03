@@ -39,6 +39,14 @@ public class ListTitleScreen implements Button {
     }
 
     @Override
+    public void getTextPunktWindow() {
+        //return null;
+        //WebElement punktWindow = waitForElementPresent(By.xpath("//*[contains(@text,'Instagram')]"), 5);
+        WebElement punktWindow = waitForElementPresent(By.id("md_title"), 5);
+        System.out.println(punktWindow.getText());
+    }
+
+    @Override
     public void clickButton() throws InterruptedException {
         scrollUp(20);
         WebElement listTitleMessageButtons = waitForElementPresent(By.xpath("//*[contains(@text,'LIST + TITLE + MESSAGE + BUTTONS')]"), 5);

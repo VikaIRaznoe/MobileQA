@@ -9,6 +9,8 @@ import tests.testng.pageobject.screen.ListTitleScreen;
 import tests.testng.utills.DataProviders;
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.util.Arrays;
+import java.util.List;
 
 
 public class ListTitleTest {
@@ -43,7 +45,7 @@ public class ListTitleTest {
     public void listTitleMessageButtonsTest() throws InterruptedException {
         ListTitleScreen listTitleScreen = new ListTitleScreen(driver);
         listTitleScreen.clickButton();
-        listTitleScreen.getTextOfElement();
+        //listTitleScreen.getTextOfElement();
     }
 
     //Проверяем наличие вопроса - Работает
@@ -62,12 +64,16 @@ public class ListTitleTest {
         Assert.assertTrue(listTitleScreen.getButton(),"А где кнопка?");
     }
 
-//    @Test (dataProviderClass = tests.testng.utills.DataProviders.class, dataProvider = "data-provider2")
-//    public void testMethod2(String data) {
-//        //DataProviders4 dataProviders4 = new DataProviders4();
-//        //DataProviders4.findStr();
-//        //System.out.println(DataProviders4.dataProviderMethod(DataProviders4.findStr()));
-//        //System.out.println("data is: " + data);
-//        System.out.println(DataProviders.findStr());
-//    }
+    @Test (dataProviderClass = tests.testng.utills.DataProviders.class, dataProvider = "dataProvider")
+    public void findStrTest(String data) {
+
+        //Данные из файла listText
+        System.out.println(data);
+        String str = data;
+        List<String> stringList = Arrays.asList(str.split(","));
+        for (String strNew: stringList){
+            System.out.println(strNew);
+            //listTitleScreen.getTextPunktWindow();
+        }
+    }
 }

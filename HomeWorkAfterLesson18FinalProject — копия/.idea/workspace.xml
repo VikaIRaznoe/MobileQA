@@ -35,8 +35,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/tests/testng/objects/Button.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="1" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
+            <state relative-caret-position="195">
+              <caret line="13" column="37" selection-start-line="13" selection-start-column="37" selection-end-line="13" selection-end-column="37" />
             </state>
           </provider>
         </entry>
@@ -44,10 +44,14 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/tests/testng/pageobject/screen/BaseScreen.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="42" selection-start-line="42" selection-end-line="42" />
+            <state relative-caret-position="354">
+              <caret line="45" column="5" selection-start-line="45" selection-start-column="5" selection-end-line="45" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="method#waitForElementPresent#0;class#BaseScreen#0" />
+                <element signature="method#getButton#0;class#BaseScreen#0" />
+                <element signature="method#clickButton#0;class#BaseScreen#0" />
+                <element signature="method#getTextPunktWindow#0;class#BaseScreen#0" />
               </folding>
             </state>
           </provider>
@@ -56,8 +60,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/tests/testng/pageobject/screen/ListTitleScreen.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="49" selection-start-line="49" selection-end-line="49" />
+            <state relative-caret-position="138">
+              <caret line="45" column="50" selection-start-line="45" selection-start-column="50" selection-end-line="45" selection-end-column="50" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#getTextOfElement#0;class#ListTitleScreen#0" />
@@ -75,8 +79,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/tests/testng/utills/DataProviders.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="325">
-              <caret line="54" column="5" selection-start-line="54" selection-start-column="5" selection-end-line="54" selection-end-column="5" />
+            <state relative-caret-position="40">
+              <caret line="36" column="39" selection-start-line="36" selection-start-column="39" selection-end-line="36" selection-end-column="39" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -84,11 +88,20 @@
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/resources/listText">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="15">
+              <caret line="1" column="34" selection-start-line="1" selection-start-column="34" selection-end-line="1" selection-end-column="34" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/tests/ListTitleTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="173">
-              <caret line="40" selection-start-line="40" selection-end-line="45" selection-end-column="5" />
+            <state relative-caret-position="70">
+              <caret line="61" column="22" lean-forward="true" selection-start-line="61" selection-start-column="22" selection-end-line="61" selection-end-column="22" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -110,10 +123,11 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/build.gradle" />
+        <option value="$PROJECT_DIR$/src/test/resources/listText" />
+        <option value="$PROJECT_DIR$/src/test/java/tests/testng/utills/DataProviders.java" />
         <option value="$PROJECT_DIR$/src/test/java/tests/testng/objects/Button.java" />
         <option value="$PROJECT_DIR$/src/test/java/tests/testng/pageobject/screen/BaseScreen.java" />
         <option value="$PROJECT_DIR$/src/test/java/tests/testng/pageobject/screen/ListTitleScreen.java" />
-        <option value="$PROJECT_DIR$/src/test/java/tests/testng/utills/DataProviders.java" />
         <option value="$PROJECT_DIR$/src/test/java/tests/ListTitleTest.java" />
       </list>
     </option>
@@ -166,6 +180,45 @@
               <item name="HomeWorkAfterLesson18FinalProject" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="tests" type="462c0819:PsiDirectoryNode" />
+              <item name="testng" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="HomeWorkAfterLesson18FinalProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="HomeWorkAfterLesson18FinalProject" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="tests" type="462c0819:PsiDirectoryNode" />
+              <item name="testng" type="462c0819:PsiDirectoryNode" />
+              <item name="objects" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="HomeWorkAfterLesson18FinalProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="HomeWorkAfterLesson18FinalProject" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="tests" type="462c0819:PsiDirectoryNode" />
+              <item name="testng" type="462c0819:PsiDirectoryNode" />
+              <item name="screen" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="HomeWorkAfterLesson18FinalProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="HomeWorkAfterLesson18FinalProject" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="tests" type="462c0819:PsiDirectoryNode" />
+              <item name="testng" type="462c0819:PsiDirectoryNode" />
+              <item name="utills" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="HomeWorkAfterLesson18FinalProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="HomeWorkAfterLesson18FinalProject" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -192,7 +245,7 @@
     </option>
   </component>
   <component name="RunManager" selected="TestNG.ListTitleTest.searchButtonTest">
-    <configuration name="ListTitleTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="ListTitleTest.findStrTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="HomeWorkAfterLesson18FinalProject.test" />
       <extension name="coverage">
         <pattern>
@@ -202,7 +255,8 @@
       </extension>
       <option name="PACKAGE_NAME" value="tests" />
       <option name="MAIN_CLASS_NAME" value="tests.ListTitleTest" />
-      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="METHOD_NAME" value="findStrTest" />
+      <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
       <method v="2">
@@ -220,24 +274,6 @@
       <option name="PACKAGE_NAME" value="tests" />
       <option name="MAIN_CLASS_NAME" value="tests.ListTitleTest" />
       <option name="METHOD_NAME" value="listTitleMessageButtonsQuestionTest" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ListTitleTest.listTitleMessageButtonsTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="HomeWorkAfterLesson18FinalProject.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.ListTitleTest" />
-      <option name="METHOD_NAME" value="listTitleMessageButtonsTest" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -263,12 +299,49 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ListTitleTest.testMethod" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="HomeWorkAfterLesson18FinalProject.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.ListTitleTest" />
+      <option name="METHOD_NAME" value="testMethod" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ListTitleTest.testMethod2" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="HomeWorkAfterLesson18FinalProject.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.ListTitleTest" />
+      <option name="METHOD_NAME" value="testMethod2" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="TestNG.ListTitleTest.searchButtonTest" />
+        <item itemvalue="TestNG.ListTitleTest.testMethod2" />
+        <item itemvalue="TestNG.ListTitleTest.findStrTest" />
+        <item itemvalue="TestNG.ListTitleTest.testMethod" />
         <item itemvalue="TestNG.ListTitleTest.listTitleMessageButtonsQuestionTest" />
-        <item itemvalue="TestNG.ListTitleTest" />
-        <item itemvalue="TestNG.ListTitleTest.listTitleMessageButtonsTest" />
       </list>
     </recent_temporary>
   </component>
@@ -285,6 +358,38 @@
     </task>
     <servers />
   </component>
+  <component name="TestHistory">
+    <history-entry file="ListTitleTest_searchButtonTest - 2020.02.04 at 00h 53m 41s.xml">
+      <configuration name="ListTitleTest.searchButtonTest" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="ListTitleTest_testMethod - 2020.02.04 at 00h 54m 13s.xml">
+      <configuration name="ListTitleTest.testMethod" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="ListTitleTest_testMethod - 2020.02.04 at 00h 54m 49s.xml">
+      <configuration name="ListTitleTest.testMethod" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="ListTitleTest_testMethod - 2020.02.04 at 00h 58m 13s.xml">
+      <configuration name="ListTitleTest.testMethod" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="ListTitleTest_testMethod2 - 2020.02.04 at 00h 59m 49s.xml">
+      <configuration name="ListTitleTest.testMethod2" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="ListTitleTest_testMethod2 - 2020.02.04 at 01h 01m 46s.xml">
+      <configuration name="ListTitleTest.testMethod2" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="ListTitleTest_findStrTest - 2020.02.04 at 01h 04m 58s.xml">
+      <configuration name="ListTitleTest.findStrTest" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="ListTitleTest_testMethod2 - 2020.02.04 at 01h 08m 01s.xml">
+      <configuration name="ListTitleTest.testMethod2" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="ListTitleTest_testMethod2 - 2020.02.04 at 01h 08m 59s.xml">
+      <configuration name="ListTitleTest.testMethod2" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="ListTitleTest_testMethod2 - 2020.02.04 at 01h 13m 02s.xml">
+      <configuration name="ListTitleTest.testMethod2" configurationId="TestNG" />
+    </history-entry>
+  </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="808" extended-state="0" />
     <editor active="true" />
@@ -299,10 +404,11 @@
       <window_info anchor="bottom" id="Version Control" />
       <window_info anchor="bottom" id="Terminal" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="bottom" id="Build" visible="true" weight="0.32960895" />
+      <window_info anchor="bottom" id="Build" weight="0.32960895" />
+      <window_info anchor="bottom" id="Messages" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32960895" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -326,17 +432,38 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/listText">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="34" selection-start-line="1" selection-start-column="34" selection-end-line="1" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/tests/testng/objects/Button.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="1" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
+        <state relative-caret-position="195">
+          <caret line="13" column="37" selection-start-line="13" selection-start-column="37" selection-end-line="13" selection-end-column="37" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/tests/testng/pageobject/screen/BaseScreen.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="42" selection-start-line="42" selection-end-line="42" />
+        <state relative-caret-position="354">
+          <caret line="45" column="5" selection-start-line="45" selection-start-column="5" selection-end-line="45" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#waitForElementPresent#0;class#BaseScreen#0" />
+            <element signature="method#getButton#0;class#BaseScreen#0" />
+            <element signature="method#clickButton#0;class#BaseScreen#0" />
+            <element signature="method#getTextPunktWindow#0;class#BaseScreen#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/tests/testng/utills/DataProviders.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="40">
+          <caret line="36" column="39" selection-start-line="36" selection-start-column="39" selection-end-line="36" selection-end-column="39" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -345,8 +472,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/tests/testng/pageobject/screen/ListTitleScreen.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="49" selection-start-line="49" selection-end-line="49" />
+        <state relative-caret-position="138">
+          <caret line="45" column="50" selection-start-line="45" selection-start-column="50" selection-end-line="45" selection-end-column="50" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#getTextOfElement#0;class#ListTitleScreen#0" />
@@ -360,20 +487,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/tests/testng/utills/DataProviders.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="54" column="5" selection-start-line="54" selection-start-column="5" selection-end-line="54" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/tests/ListTitleTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="173">
-          <caret line="40" selection-start-line="40" selection-end-line="45" selection-end-column="5" />
+        <state relative-caret-position="70">
+          <caret line="61" column="22" lean-forward="true" selection-start-line="61" selection-start-column="22" selection-end-line="61" selection-end-column="22" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

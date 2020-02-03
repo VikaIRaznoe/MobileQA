@@ -39,4 +39,9 @@ public class BaseScreen implements Button {
     public void clickButton() {
 
     }
+
+    @Override
+    public void getTextPunktWindow() {
+        //return null;
+    }
 }

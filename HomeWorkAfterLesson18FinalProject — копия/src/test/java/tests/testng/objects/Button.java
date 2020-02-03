@@ -9,4 +9,7 @@ public interface Button {
 
     //Пробуем нажать на кнопку
     public void clickButton() throws InterruptedException;
+
+    //Смотрим текст в всплывающем окне
+    public void getTextPunktWindow();
 }

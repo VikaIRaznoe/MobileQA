@@ -39,11 +39,14 @@ public class ListTitleScreen implements Button {
     }
 
     @Override
-    public void getTextPunktWindow() {
-        //return null;
-        //WebElement punktWindow = waitForElementPresent(By.xpath("//*[contains(@text,'Instagram')]"), 5);
-        WebElement punktWindow = waitForElementPresent(By.id("md_title"), 5);
-        System.out.println(punktWindow.getText());
+    public List<WebElement> getListTextPunktWindow() {
+        scrollUp(20);
+        WebElement listTitleMessageButtons = waitForElementPresent(By.xpath("//*[contains(@text,'LIST + TITLE + MESSAGE + BUTTONS')]"), 5);
+        listTitleMessageButtons.click();
+        WebElement element = waitForElementPresent(By.id("md_recyclerview_content"),5);
+        //Получаем кол-во элментов в списке, который всплывает при нажатии на кнопку
+        List<WebElement> listElements = element.findElements(By.id("md_title"));
+        return listElements;
     }
 
     @Override

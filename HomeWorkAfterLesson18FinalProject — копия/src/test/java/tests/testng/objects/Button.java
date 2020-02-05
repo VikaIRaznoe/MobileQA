@@ -1,5 +1,9 @@
 package tests.testng.objects;
 
+import org.openqa.selenium.WebElement;
+
+import java.util.List;
+
 public interface Button {
     //Смотрим имя кнопки
     public String getTextOfElement();
@@ -11,5 +15,5 @@ public interface Button {
     public void clickButton() throws InterruptedException;
 
     //Смотрим текст в всплывающем окне
-    public void getTextPunktWindow();
+    public List<WebElement> getListTextPunktWindow();
 }

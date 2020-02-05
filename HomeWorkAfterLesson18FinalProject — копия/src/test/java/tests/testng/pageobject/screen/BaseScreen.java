@@ -8,6 +8,8 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import tests.testng.objects.Button;
 
+import java.util.List;
+
 
 public class BaseScreen implements Button {
     private AppiumDriver<MobileElement> driver;
@@ -41,7 +43,7 @@ public class BaseScreen implements Button {
     }
 
     @Override
-    public void getTextPunktWindow() {
-        //return null;
+    public List<WebElement> getListTextPunktWindow() {
+        return null;
     }
 }

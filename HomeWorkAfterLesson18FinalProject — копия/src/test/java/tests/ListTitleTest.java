@@ -2,6 +2,7 @@ package tests;
 
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileElement;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.Assert;
 import org.testng.annotations.*;
@@ -74,6 +75,21 @@ public class ListTitleTest {
         for (String strNew: stringList){
             System.out.println(strNew);
             //listTitleScreen.getTextPunktWindow();
+        }
+    }
+
+    @Test (dataProviderClass = tests.testng.utills.DataProviders.class, dataProvider = "dataProvider")
+    public void findStrRefactTest(String data) {
+
+        //Данные из файла listText
+        String str = data;
+        List<String> stringList = Arrays.asList(str.split(","));
+        
+        //После нажатия на кнопку появляется окно со списком.Нам нужно сравнить его со списком из файла listText
+        ListTitleScreen listTitleScreen = new ListTitleScreen(driver);
+        List<WebElement> listElements = listTitleScreen.getListTextPunktWindow();
+        for(int i = 0; i< listElements.size(); i++) {
+            Assert.assertEquals(listElements.get(i).getText(),stringList.get(i));
         }
     }
 }
